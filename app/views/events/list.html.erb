@@ -1,20 +1,24 @@
 <h1>予定一覧</h1>
 
 <div>
-  <table>
+  <table class="table content_list">
     <tr>
-      <th>番号</th>
-      <th>タイトル</th>
-      <th>開始日</th>
-      <th>終了日</th>
+      <thead>
+        <th>番号</th>
+        <th>タイトル</th>
+        <th>開始日</th>
+        <th>終了日</th>
+      </thead>
     </tr>
-    <tr>
-      <% @events.each do |event| %>
-        <td><%= event.id %></td>
-        <td><%= event.title %></td>
-        <td><%= event.start %></td>
-        <td><%= event.end %></td>
-      <% end %>
-    </tr>
+    <% @events.each do |event| %>
+      <tr>
+        <tbody>
+          <td><%= event.id %></td>
+          <td><%= event.title %></td>
+          <td><%= event.start %></td>
+          <td><%= event.end %></td>
+        </tbody>
+      </tr>
+    <% end %>
   </table>
 </div>
