@@ -1,0 +1,20 @@
+<h1>予定一覧</h1>
+
+<div>
+  <table>
+    <tr>
+      <th>番号</th>
+      <th>タイトル</th>
+      <th>開始日</th>
+      <th>終了日</th>
+    </tr>
+    <tr>
+      <% @events.each do |event| %>
+        <td><%= event.id %></td>
+        <td><%= event.title %></td>
+        <td><%= event.start %></td>
+        <td><%= event.end %></td>
+      <% end %>
+    </tr>
+  </table>
+</div>

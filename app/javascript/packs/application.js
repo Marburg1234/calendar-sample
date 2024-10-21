@@ -10,5 +10,5 @@ import "channels"
 import './calendar';
 
 Rails.start()
-Turbolinks.start()
+// Turbolinks.start()
 ActiveStorage.start()

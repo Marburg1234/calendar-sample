@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-10.times do |i|
+3.times do |i|
   Event.create!(
     title: "サンプルイベント#{i+1}",
     start: Time.zone.now + i.days,

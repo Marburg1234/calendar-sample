@@ -1,0 +1,21 @@
+<h1>イベントの投稿をする</h1>
+
+<div>
+  <%= form_with model: @event do |f| %>
+    <div>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
+    <div>
+      <%= f.label "開始日" %>
+      <%= f.text_field :start, placeholder: "Wed, 23 Oct 2024" %>
+    </div>
+    <div>
+      <%= f.label "終了日" %>
+      <%= f.text_field :end, placeholder: "Wed, 23 Oct 2024" %>
+    </div>
+    <div>
+      <%= f.submit "保存する" %>
+    </div>
+  <% end %>
+</div>
