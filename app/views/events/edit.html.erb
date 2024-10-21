@@ -1,0 +1,19 @@
+<h1>イベントを編集できるよ！</h1>
+
+<div>
+  <%= form_with model: @event, url: event_path do |f| %>
+    <div>
+      <%= f.label "タイトル" %>
+      <%= f.text_field :title, autofocus: true %>
+    </div>
+    <div>
+      <%= f.label "開始日" %>
+      <%= f.text_field :start %>
+    </div>
+    <div>
+      <%= f.label "終了日" %>
+      <%= f.text_field :end %>
+    </div>
+    <%= f.submit "保存する" %>
+  <% end %>
+</div>

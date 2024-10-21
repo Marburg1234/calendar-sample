@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  */
+@import './events';
+
 
 *{
   margin: 0;
@@ -33,3 +35,4 @@ main{
   justify-content: center;
   width: 80%;
 }
+

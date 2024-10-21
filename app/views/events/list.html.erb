@@ -8,6 +8,7 @@
         <th>タイトル</th>
         <th>開始日</th>
         <th>終了日</th>
+        <th></th>
       </thead>
     </tr>
     <% @events.each do |event| %>
@@ -17,6 +18,7 @@
           <td><%= event.title %></td>
           <td><%= event.start %></td>
           <td><%= event.end %></td>
+          <td><%= link_to "編集する", "/events/#{event.id}/edit" %></td>
         </tbody>
       </tr>
     <% end %>
