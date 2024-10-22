@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     plugins: [ dayGridPlugin, listPlugin ],
     initialView: 'dayGridMonth',
     locale: "jp", //この行を追加 日本語に変換する
+    timeZone: 'Asia/Tokyo', // タイムゾーンを設定
     events: '/events', // eventData変数を使用してイベントデータを渡す
     //レスポンシブ処理を追加
     windowResize: function () {

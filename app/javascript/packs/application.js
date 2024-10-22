@@ -9,7 +9,22 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import './calendar';
 import "../stylesheets/application";
+import flatpickr from "flatpickr";
+import "flatpickr/dist/flatpickr.min.css";
 
 Rails.start()
 // Turbolinks.start()
 ActiveStorage.start()
+
+document.addEventListener('DOMContentLoaded', () => {
+  flatpickr("#start_datepicker", {
+    enableTime: true,
+    dateFormat: "Y-m-d H:i",
+    defaultDate: new Date(), // ローカルタイムゾーンを使う
+  });
+  flatpickr("#end_datepicker", {
+    enableTime: true,
+    dateFormat: "Y-m-d H:i",
+    defaultDate: new Date(), // ローカルタイムゾーンを使う
+  });
+});

@@ -8,11 +8,11 @@
     </div>
     <div>
       <%= f.label "開始日" %>
-      <%= f.text_field :start, placeholder: "ex)Wed, 23 Oct 2024" %>
+      <%= f.text_field :start, id: "start_datepicker", placeholder: "カレンダーを表示" %>
     </div>
     <div>
       <%= f.label "終了日" %>
-      <%= f.text_field :end, placeholder: "ex)Wed, 23 Oct 2024" %>
+      <%= f.text_field :end, id: "end_datepicker", placeholder: "カレンダーを表示" %>
     </div>
     <div>
       <%= f.submit "保存する" %>
